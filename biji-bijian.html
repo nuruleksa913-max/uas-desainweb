@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenRoot Farm - Rempah dan Biji Kacangan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo-greenroot.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/kategori.css" />
+</head>
+<body data-category="biji-bijian">
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a class="brand" href="Home.html"><img src="assets/logo-greenroot.png" alt="Logo GreenRoot" />Green<span>Root</span></a>
+      <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="produk.html" class="active">Produk</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="keranjang.html" class="btn btn-primary">Keranjang</a>
+        <a href="keranjang.html" class="cart-link" aria-label="Keranjang"><svg viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h11M10 21a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2z"/></svg><span class="cart-badge">0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <section class="catalog-head">
+      <h1 class="section-title">Rempah &amp; Biji Kacangan</h1>
+      <p>Pilihan rempah dapur dan biji kacangan segar untuk masakan harian.</p>
+    </section>
+
+    <section id="categoryProductGrid" class="card-grid catalog-grid"></section>
+  </main>
+  <script src="js/store.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/kategori.js"></script>
+</body>
+</html>

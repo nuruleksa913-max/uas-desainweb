@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenRoot Farm - Home</title>
+  <meta name="description" content="GreenRoot Farm, toko buah dan sayur segar dengan checkout, keranjang, dan struk belanja siap print." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo-greenroot.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body class="home-page">
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a class="brand" href="Home.html">
+        <img src="assets/logo-greenroot.png" alt="Logo GreenRoot" />
+        Green<span>Root</span>
+      </a>
+      <ul class="menu">
+        <li><a href="Home.html" class="active">Home</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="produk.html" class="btn btn-primary">Belanja</a>
+        <a href="keranjang.html" class="cart-link" aria-label="Keranjang">
+          <svg viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h11M10 21a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2z"/></svg>
+          <span class="cart-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="hero-kicker">Panen organik harian - Palembang</p>
+        <h1>Fresh from the root, good for you</h1>
+        <p>
+          Selamat datang di GreenRoot Farm. Semua pesanan kami menggunakan sistem pick up, jadi kamu ambil sendiri
+          langsung di toko. Pilih produk, masukkan keranjang, checkout, lalu struk siap ditunjukkan saat pengambilan.
+        </p>
+        <div class="hero-actions">
+          <a href="produk.html" class="btn btn-gold">Lihat Produk</a>
+        </div>
+      </div>
+
+      <div class="hero-image-wrap">
+        <img id="heroImage" src="https://images.unsplash.com/photo-1610348725531-843dff563e2c?w=1200&q=80" alt="Sayuran segar" />
+      </div>
+    </section>
+
+    <section class="home-ending">
+      <div class="ending-cta">
+        <p class="ending-tagline">Ayo belanja hemat dan asik!</p>
+        <h2 class="section-title">Belanja Segar Lebih Cepat</h2>
+        <p class="ending-summary">Belanja kebutuhan dapur jadi lebih simpel, cepat, dan tetap segar.</p>
+        <div class="ending-actions">
+          <a href="produk.html" class="btn btn-primary">Mulai Belanja</a>
+          <a href="kontak.html" class="btn btn-outline">Hubungi Kami</a>
+        </div>
+      </div>
+      <div class="ending-features">
+        <article class="ending-card promo-card">
+          <h3>Hemat 5%</h3>
+          <p class="promo-lead">Belanja di atas Rp100.000</p>
+          <p class="promo-tier">Nikmati potongan otomatis 5% saat checkout.</p>
+        </article>
+        <article class="ending-card promo-card">
+          <h3>Hemat 10%</h3>
+          <p class="promo-lead">Belanja di atas Rp200.000</p>
+          <p class="promo-tier">Dapat diskon 10% untuk belanja lebih banyak.</p>
+        </article>
+        <article class="ending-card promo-card">
+          <h3>Spesial 20%</h3>
+          <p class="promo-lead">Belanja di atas Rp300.000</p>
+          <p class="promo-tier">Potongan terbesar 20% biar belanja makin asik.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell site-footer-grid home-footer-grid">
+      <div class="site-foot-brand">
+        <a class="brand" href="Home.html">
+          <img src="assets/logo-greenroot.png" alt="Logo GreenRoot" />
+          Green<span>Root</span>
+        </a>
+        <p>Fresh from the root, good for you. Belanja bahan segar langsung dari kebun lokal.</p>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p>Jl. Pertanian No. 12, Palembang</p>
+        <p>+62 812-3456-7890</p>
+        <p>halo@greenrootfarm.id</p>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      (c) 2026 GreenRoot Farm. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/store.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

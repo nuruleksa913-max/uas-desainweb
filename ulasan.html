@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenRoot Farm - Ulasan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo-greenroot.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/ulasan.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a class="brand" href="Home.html"><img src="assets/logo-greenroot.png" alt="Logo GreenRoot" />Green<span>Root</span></a>
+      <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="ulasan.html" class="active">Ulasan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="keranjang.html" class="btn btn-primary">Keranjang</a>
+        <a href="keranjang.html" class="cart-link" aria-label="Keranjang"><svg viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h11M10 21a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2z"/></svg><span class="cart-badge">0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-shell">
+    <section class="review-head">
+      <h1 class="section-title">Ulasan Pelanggan</h1>
+      <p class="section-subtitle">Live stream ulasan pelanggan GreenRoot yang terus bergerak.</p>
+    </section>
+
+    <section class="review-layout">
+      <aside class="review-left">
+        <h2>Tulis Ulasan Kamu</h2>
+        <p>Isi form ini untuk kirim ulasan baru.</p>
+        <form id="reviewForm" class="review-form">
+          <div class="review-field">
+            <label for="reviewName">Nama</label>
+            <input id="reviewName" name="reviewName" placeholder="Nama kamu" required />
+          </div>
+          <div class="review-field">
+            <label for="reviewCity">Kota</label>
+            <input id="reviewCity" name="reviewCity" placeholder="Contoh: Palembang" required />
+          </div>
+          <div class="review-field">
+            <label for="reviewRating">Rating</label>
+            <select id="reviewRating" name="reviewRating" required>
+              <option value="5">5 Bintang</option>
+              <option value="4">4 Bintang</option>
+              <option value="3">3 Bintang</option>
+            </select>
+          </div>
+          <div class="review-field">
+            <label for="reviewMessage">Isi Ulasan</label>
+            <textarea id="reviewMessage" name="reviewMessage" placeholder="Tulis pengalaman belanja kamu..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Ulasan</button>
+        </form>
+      </aside>
+
+      <div class="review-right">
+        <section class="review-right-top">
+          <div class="live-head">
+            <h2>Live Ulasan</h2>
+            <span>Auto bergerak</span>
+          </div>
+          <div class="live-stream-window">
+            <div id="liveStreamTrack" class="live-stream-track"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page-shell site-footer-grid">
+      <div class="site-foot-brand">
+        <a class="brand" href="Home.html">
+          <img src="assets/logo-greenroot.png" alt="Logo GreenRoot" />
+          Green<span>Root</span>
+        </a>
+        <p>Fresh from the root, good for you. Belanja bahan segar langsung dari kebun lokal.</p>
+      </div>
+      <div>
+        <h4>Menu</h4>
+        <a href="Home.html">Home</a>
+        <a href="produk.html">Produk</a>
+        <a href="tentang.html">Tentang Kami</a>
+      </div>
+      <div>
+        <h4>Bantuan</h4>
+        <a href="keranjang.html">Keranjang</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="kontak.html">Kontak</a>
+      </div>
+      <div>
+        <h4>Kontak</h4>
+        <p>Jl. Pertanian No. 12, Palembang</p>
+        <p>+62 812-3456-7890</p>
+        <p>halo@greenrootfarm.id</p>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      (c) 2026 GreenRoot Farm. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="js/store.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/ulasan.js"></script>
+</body>
+</html>

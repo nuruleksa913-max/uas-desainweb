@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GreenRoot Farm - Keranjang</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logo-greenroot.png" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/keranjang.css" />
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a class="brand" href="Home.html"><img src="assets/logo-greenroot.png" alt="Logo GreenRoot" />Green<span>Root</span></a>
+      <ul class="menu">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <li><a href="tentang.html">Tentang Kami</a></li>
+        <li><a href="ulasan.html">Ulasan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="checkout.html" class="btn btn-primary">Checkout</a>
+        <a href="keranjang.html" class="cart-link" aria-label="Keranjang"><svg viewBox="0 0 24 24"><path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.35 2.7A1 1 0 007 17h11M10 21a1 1 0 100-2 1 1 0 000 2zm7 0a1 1 0 100-2 1 1 0 000 2z"/></svg><span class="cart-badge">0</span></a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page-shell cart-layout">
+    <h1 class="section-title">Keranjang Belanja</h1>
+
+    <section id="cartEmpty" class="cart-empty" hidden>
+      <h2>Keranjang masih kosong</h2>
+      <p>Ayo pilih produk dulu, lalu klik Tambah atau Beli Sekarang.</p>
+      <a href="produk.html" class="btn btn-gold">Mulai Belanja</a>
+    </section>
+
+    <section id="cartContent" class="cart-main" hidden>
+      <div id="cartItems" class="cart-items"></div>
+
+      <aside class="cart-summary">
+        <h3>Ringkasan Belanja</h3>
+        <div class="sum-line"><span>Subtotal</span><strong id="subtotalValue">Rp 0</strong></div>
+        <div class="sum-line"><span>Biaya Pick Up</span><strong id="shippingValue">Rp 0</strong></div>
+        <div class="sum-line total"><span>Total</span><strong id="totalValue">Rp 0</strong></div>
+        <a href="checkout.html" class="btn btn-primary">Lanjut ke Checkout</a>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+  <div class="page-shell site-footer-grid">
+    <div class="site-foot-brand">
+      <a class="brand" href="Home.html">
+        <img src="assets/logo-greenroot.png" alt="Logo GreenRoot" />
+        Green<span>Root</span>
+      </a>
+      <p>Fresh from the root, good for you. Belanja bahan segar langsung dari kebun lokal.</p>
+    </div>
+    <div>
+      <h4>Menu</h4>
+      <a href="Home.html">Home</a>
+      <a href="produk.html">Produk</a>
+      <a href="tentang.html">Tentang Kami</a>
+    </div>
+    <div>
+      <h4>Bantuan</h4>
+      <a href="keranjang.html">Keranjang</a>
+      <a href="checkout.html">Checkout</a>
+      <a href="kontak.html">Kontak</a>
+    </div>
+    <div>
+      <h4>Kontak</h4>
+      <p>Jl. Pertanian No. 12, Palembang</p>
+      <p>+62 812-3456-7890</p>
+      <p>halo@greenrootfarm.id</p>
+    </div>
+  </div>
+  <div class="site-footer-bottom">
+    (c) 2026 GreenRoot Farm. All rights reserved.
+  </div>
+</footer>
+
+  <script src="js/store.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/keranjang.js"></script>
+</body>
+</html>
+
